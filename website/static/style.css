@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #6D7D8B;
+}
+
+.blue {
+    color: #2F80ED;
+}
+
+header {
+    margin-top: 30px;
+}
+
+#file {
+    width: 0.01px;
+	height: 0.01px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#drop-area {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='%23DAE3EAFF' stroke-width='3' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 5px;
+    width: 500px;
+    height: 124px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+}
+
+#drop-area:hover {
+    cursor: pointer;
+}
+
+#drop-area p {
+    font-size: 18px;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+main .prediction {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .prediction .image {
+    width: 367px;
+    height: 257px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+}
+
+main .prediction canvas {
+    height: 257px !important;
+    max-width: 65%;
+}
